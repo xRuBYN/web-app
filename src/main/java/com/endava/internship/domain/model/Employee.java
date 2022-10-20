@@ -46,7 +46,7 @@ public class Employee {
     private Double salary;
 
     @JoinColumn(name = "department_id")
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Department department;
 
 
